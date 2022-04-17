@@ -1,0 +1,33 @@
+:root{
+  --app-light: #dfdfdf;
+  --app-success: #099f2a;
+  --app-danger: #de295a;
+}
+
+
+.app-alert{
+  padding: .25rem 1.75rem;
+  background: var(--app-light);
+  border-radius: .5rem;
+  position: absolute;
+  display: flex;
+  right: 5%;
+  font-size: 1.25rem;
+  box-shadow: 0 0 .5rem var(--app-light);
+  z-index: 9999;
+  justify-content: center;
+  align-items: center;
+}
+.app-alert-success{
+  border: 3px solid var(--app-success);
+  color: var(--app-success);
+  text-shadow: 0 0 .05rem rgb(10,150,80);
+}
+.app-alert-danger{
+  border: 3px solid var(--app-danger);
+  color: var(--app-danger);
+  text-shadow: 0 0 .05rem rgb(150,10,80);
+}
+.app-alert-ico{
+  font-size: 2rem
+}

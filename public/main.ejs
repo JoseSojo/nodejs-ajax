@@ -1,0 +1,38 @@
+<%- include('../template/head.ejs'); %>
+<%- include('../template/navigation.ejs'); %>
+<%- include('../template/alert.ejs'); %>
+
+<div class="container pt-3">
+  <div class="row mb-3">
+    <!-- RESULT THE SEARCH -->
+    <div class="col-md-4" id='result-serach'><ul id="result-serach-list"></ul></div>
+
+    <form id="addItem" class="card col-md-8 m-auto">
+      <div class="card-body d-flex">
+        <input type="text" id='newItemName' placeholder='Nombre' class='shadow-none rounded-0 form-control'>
+        <input type="number" id='newItemPrice' placeholder='Precio' class='shadow-none rounded-0 form-control'>
+        <input type="submit" class='btn btn-primary rounded-0' value="Agregar Producto">
+      </div>
+    </form>
+
+  </div>
+  <div class="row">
+    <div class="card col-11 m-auto">
+      <div class="card-body">
+        <table class="table table-borderles table-striped">
+          <thead>
+            <tr>
+              <td span="1">#</td>
+              <td span="2">Nombre</td>
+              <td span="2">price</td>
+              <td span="2">Acción</td>
+            </tr>
+          </thead>
+          <tbody id='table-body'></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+<%- include('../template/footer.ejs'); %>
